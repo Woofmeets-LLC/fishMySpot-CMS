@@ -4,7 +4,7 @@ module.exports = {
         provider: 'strapi-provider-upload-google-cloud-storage',
         providerOptions: {
             bucketName: 'fishmspotcms',
-            publicFiles: false,
+            publicFiles: true,
             uniform: false,
             basePath: '',
         },
