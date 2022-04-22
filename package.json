@@ -9,10 +9,10 @@
     "build": "strapi build",
     "strapi": "strapi",
     "gcp-build": "strapi build"
-
   },
   "devDependencies": {},
   "dependencies": {
+    "@strapi-community/strapi-provider-upload-google-cloud-storage": "^4.1.7",
     "@strapi/plugin-i18n": "4.1.8",
     "@strapi/plugin-users-permissions": "4.1.8",
     "@strapi/strapi": "4.1.8",
