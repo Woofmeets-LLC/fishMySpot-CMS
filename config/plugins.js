@@ -6,7 +6,7 @@ module.exports = {
             bucketName: 'fishmspotcms',
             publicFiles: false,
             uniform: false,
-            basePath: 'gs://fishmspotcms',
+            basePath: '',
         },
       },
     },
