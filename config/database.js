@@ -32,5 +32,5 @@ const devConnection = (env) => {
 };
 
 module.exports = ({ env }) => ({
-  connection: devConnection(env),
+  connection: productionConnection(env),
 });
