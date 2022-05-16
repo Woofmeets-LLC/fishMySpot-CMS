@@ -32,5 +32,8 @@ const devConnection = (env) => {
 };
 
 module.exports = ({ env }) => ({
-  connection: productionConnection(env),
+  connection:
+    env("NODE_ENV") === "production"
+      ? productionConnection(env)
+      : devConnection(env),
 });

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "state",
     "pluralName": "states",
-    "displayName": "state"
+    "displayName": "State",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

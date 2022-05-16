@@ -4,7 +4,8 @@
   "info": {
     "singularName": "blog",
     "pluralName": "blogs",
-    "displayName": "Blog"
+    "displayName": "Blog",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -32,9 +33,6 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
-    },
-    "youtubeEmbedLink": {
-      "type": "string"
     }
   }
 }
