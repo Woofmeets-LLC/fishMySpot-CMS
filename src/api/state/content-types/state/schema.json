@@ -67,6 +67,24 @@
         "Wisconsin",
         "Wyoming"
       ]
+    },
+    "statePageHeader": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "statePageDescription": {
+      "type": "text",
+      "required": false,
+      "maxLength": 160
+    },
+    "featuredImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
