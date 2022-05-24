@@ -4,7 +4,8 @@
   "info": {
     "singularName": "featured-spot",
     "pluralName": "featured-spots",
-    "displayName": "Featured Spot"
+    "displayName": "Featured Spot",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,23 +13,24 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
       "type": "media",
-      "multiple": true
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "spotLink": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }

@@ -16,10 +16,12 @@
       "type": "string",
       "required": true
     },
-    "giftCardAmount": {
-      "type": "integer"
+    "cardAmount": {
+      "type": "integer",
+      "required": true,
+      "min": 1
     },
-    "giftCardPrice": {
+    "purchasePrice": {
       "type": "integer",
       "required": true,
       "min": 1
