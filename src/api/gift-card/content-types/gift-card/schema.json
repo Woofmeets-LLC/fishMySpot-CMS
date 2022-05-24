@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gift_cards",
+  "info": {
+    "singularName": "gift-card",
+    "pluralName": "gift-cards",
+    "displayName": "Gift Card",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "giftCardAmount": {
+      "type": "integer"
+    },
+    "giftCardPrice": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    }
+  }
+}
