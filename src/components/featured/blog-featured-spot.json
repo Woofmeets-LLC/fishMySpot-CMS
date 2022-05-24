@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_featured_blog_featured_spots",
+  "info": {
+    "displayName": "Blog Featured Spot",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 160
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "spotLink": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
