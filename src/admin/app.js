@@ -57,6 +57,10 @@ export default {
         "Settings.permissions.users.listview.header.subtitle":
           "All the users who have access to the Fishmyspot CMS admin panel",
       },
+      // Disable video tutorials
+      tutorials: false,
+      // Disable notifications about new Strapi releases
+      notifications: { release: false },
     },
   },
   bootstrap(app) {
