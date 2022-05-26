@@ -14,7 +14,8 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
+      "required": true,
+      "maxLength": 60
     },
     "image": {
       "type": "media",
@@ -26,7 +27,8 @@
     },
     "description": {
       "type": "text",
-      "required": true
+      "required": true,
+      "maxLength": 140
     },
     "spotLink": {
       "type": "string",
