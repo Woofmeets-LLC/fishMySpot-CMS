@@ -20,11 +20,6 @@
       "type": "integer",
       "required": true,
       "min": 1
-    },
-    "purchasePrice": {
-      "type": "integer",
-      "required": true,
-      "min": 1
     }
   }
 }
