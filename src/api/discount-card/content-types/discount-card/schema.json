@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "discount_cards",
+  "info": {
+    "singularName": "discount-card",
+    "pluralName": "discount-cards",
+    "displayName": "Discount Card",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "amount": {
+      "type": "integer",
+      "min": 1,
+      "max": 99,
+      "required": true
+    },
+    "coupon": {
+      "type": "string",
+      "unique": true
+    },
+    "valid": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}
