@@ -6,7 +6,4 @@
 
 const { createCoreController } = require("@strapi/strapi").factories;
 
-module.exports = createCoreController(
-  "api::discount-card.discount-card",
-  ({ strapi }) => ({})
-);
+module.exports = createCoreController("api::discount-card.discount-card");
