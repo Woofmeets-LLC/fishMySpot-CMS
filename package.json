@@ -8,16 +8,18 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "gcp-build": "strapi build"
+    "gcp-build": "strapi build",
+    "update": "yarn add @strapi/plugin-i18n@latest @strapi/plugin-users-permissions@latest @strapi/provider-upload-cloudinary@latest @strapi/strapi@latest"
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/plugin-i18n": "^4.1.12",
-    "@strapi/plugin-users-permissions": "^4.1.12",
-    "@strapi/provider-upload-cloudinary": "^4.1.12",
-    "@strapi/strapi": "^4.1.12",
+    "@strapi/plugin-i18n": "^4.3.2",
+    "@strapi/plugin-users-permissions": "^4.3.2",
+    "@strapi/provider-upload-cloudinary": "^4.3.2",
+    "@strapi/strapi": "^4.3.2",
+    "axios": "^0.27.2",
     "pg": "^8.7.3",
-    "strapi-plugin-react-editorjs": "^2.0.0"
+    "strapi-plugin-react-editorjs": "^2.0.1"
   },
   "author": {
     "name": "A Strapi developer"
