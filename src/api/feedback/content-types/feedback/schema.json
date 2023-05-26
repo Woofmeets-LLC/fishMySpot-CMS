@@ -20,8 +20,8 @@
       "type": "email",
       "required": true
     },
-    "description": {
-      "type": "text"
+    "source": {
+      "type": "string"
     }
   }
 }
