@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "onboarding_sources",
+  "info": {
+    "singularName": "onboarding-source",
+    "pluralName": "onboarding-sources",
+    "displayName": "Onboarding Source"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "source": {
+      "type": "string"
+    }
+  }
+}
