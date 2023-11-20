@@ -2,10 +2,16 @@ const productionConnection = (env) => {
   return {
     client: "postgres",
     connection: {
-      host: `/cloudsql/${env("INSTANCE_CONNECTION_NAME")}`,
-      database: env("DATABASE_NAME"),
-      user: env("DATABASE_USER"),
-      password: env("DATABASE_PASSWORD"),
+      connectionString: env("DATABASE_URL"),
+      host: env("DATABASE_HOST", "localhost"),
+      port: env.int("DATABASE_PORT", 5432),
+      database: env("DATABASE_NAME", "strapi"),
+      user: env("DATABASE_USERNAME", "strapi"),
+      password: env("DATABASE_PASSWORD", "strapi"),
+      ssl: {
+        rejectUnauthorized: false,
+      },
+      schema: env("DATABASE_SCHEMA", "public"),
     },
     pool: {
       min: 0,
@@ -21,12 +27,16 @@ const devConnection = (env) => {
   return {
     client: "postgres",
     connection: {
-      host: env("DATABASE_HOST", "127.0.0.1"),
+      connectionString: env("DATABASE_URL"),
+      host: env("DATABASE_HOST", "localhost"),
       port: env.int("DATABASE_PORT", 5432),
-      database: env("DATABASE_NAME", "fishmyspotcms"),
-      user: env("DATABASE_USERNAME", "postgres"),
-      password: env("DATABASE_PASSWORD", "root"),
-      ssl: env.bool("DATABASE_SSL", false),
+      database: env("DATABASE_NAME", "strapi"),
+      user: env("DATABASE_USERNAME", "strapi"),
+      password: env("DATABASE_PASSWORD", "strapi"),
+      ssl: {
+        rejectUnauthorized: false,
+      },
+      schema: env("DATABASE_SCHEMA", "public"),
     },
   };
 };
